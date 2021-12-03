@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root{
+    --text-shadow: 0px 1px 2px rgba(0,0,0, 0.25);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1rem;
+    background: url("/img/gradient-bg.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 406px;
+    width: 662px;
+    border-radius: 3.2rem;
+    background: linear-gradient(to bottom right, rgba(124, 205, 240, 0.6), rgba(231, 192, 255, 0.4021), rgba(0, 133, 255, 0.2));
+    backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: 0px 20px 40px rgba($color: #000000, $alpha: 0.05);
+    border: 1px solid rgba(75, 29, 29, 0.125);
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+
+    &-header{
+        font-size: 3.0rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: var(--text-shadow);
+        margin-bottom: 8.1rem;
+
+        &__bluel{
+            color: blue;
+        }
+
+        &__redl{
+            color: red;
+        }
+    }
+
+    &-number{
+        font-size: 4.8rem;
+        color: white;
+        text-shadow: var(--text-shadow);
+        margin-bottom: .8rem;
+    }
+
+    &-expD{
+        color: white;
+        text-shadow: var(--text-shadow);
+
+        display: flex;
+        align-items: center;
+        gap: 0rem 2.5rem;
+
+        &__title{
+            font-size: 2.8rem;
+            width: 10%;
+        }
+
+        &__date{
+            font-size: 3.2rem;
+            width: 90%;
+        }
+
+        margin-bottom: 4rem;
+    }
+
+    &-nameEtlogo{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        &__name{
+            text-shadow: var(--text-shadow);
+            font-size: 3.6rem;
+            color: white;
+            align-self: flex-end;
+
+        }
+
+        &__logo{
+            width: 123px;
+            height: 87px;
+            position: absolute;
+            right: -1.8rem;
+            bottom: -2rem;
+        }
+    }
+}
+
